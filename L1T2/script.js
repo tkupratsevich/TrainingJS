@@ -1,22 +1,22 @@
-//Check whether a given number is prime. Log on console true or false.
+//Check a prime number
 
-let num=23;
-if ((num%2==0)&&(num!=2))
-    console.log("The number " + num + " is not prime");
-else if (num==2)
-    console.log("The number " + num + " is not prime");
+var a=7;
+if ((a%2==0)&&(a!=2))
+    console.log(a + " is not prime");
+else if (a==2)
+    console.log(a + " is not prime");
 else{
-    let k=Math.round(Math.sqrt(num));
-    let flag = false;
+    var k=Math.round(Math.sqrt(a));
+    var flag = false;
 
-    for(let i=2; i<k+1; i++)
-        if(num%i==0)
+    for(var i=2; i<k+1; i++)
+        if(a%i==0)
         {
-            console.log("The number " + num + " is not prime");
+            console.log(a + " is not prime");
             flag = true;
             break;
         }
 
     if (flag == false)
-        console.log("The number " + num + " is prime");
+        console.log(a + " is prime");
 }
